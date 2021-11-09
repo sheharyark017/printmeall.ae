@@ -8,9 +8,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.form {
+  width: 60%;
+  box-shadow: 0 0 10px 0 #acacac;
+  margin: auto;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
 .form-top {
   text-align: center;
-  margin: 50px;
+  margin: 0px 0 50px;
 }
 
 .form-top p {
@@ -19,7 +28,7 @@ body {
 }
 
 form {
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 
@@ -34,7 +43,7 @@ form label {
 }
 
 input {
-  width: 65%;
+  width: 72%;
   padding: 9px;
   border-radius: 2px;
   transition: 0.2s all linear;
@@ -74,8 +83,9 @@ input:focus {
     font-weight: 600;
   }
 
-  form {
+  .form {
     width: 100%;
     padding: 10px;
+    box-shadow: none;
   }
 }
