@@ -117,7 +117,7 @@ html {
 }
 
 .slider-product-btn a,
-.slider-category-links a {
+.category-links a {
   color: #ff9e77;
   text-decoration: none;
   font-weight: 500;
@@ -125,14 +125,14 @@ html {
 }
 
 .slider-product-btn a i,
-.slider-category-links a i {
+.category-links a i {
   font-size: 12px;
   padding-left: 5px;
   transition: all 0.3s;
 }
 
 .slider-product-btn a:hover i,
-.slider-category-links a:hover i {
+.category-links a:hover i {
   padding-left: 13px;
 }
 
@@ -188,42 +188,42 @@ html {
     font-size: 16px;
   }
 
-  .product-title {
+  .slider-product-title {
     margin-top: 20px;
   }
 
-  .product-title p {
+  .slider-product-title p {
     font-size: 17px;
   }
 
-  .product-detail-points ul li {
+  .slider-product-detail-points ul li {
     font-size: 14px;
   }
 
-  .product-detail-points ul li::after {
+  .slider-product-detail-points ul li::after {
     width: 0.22rem;
     height: 0.22rem;
   }
 
-  .product-btn {
+  .slider-product-btn {
     position: absolute;
     bottom: 10px;
   }
 
-  .product-btn a {
+  .slider-product-btn a {
     color: #ff9e77;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
   }
 
-  .product-btn a i {
+  .slider-product-btn a i {
     font-size: 12px;
     padding-left: 5px;
     transition: all 0.3s;
   }
 
-  .product-btn a:hover i {
+  .slider-product-btn a:hover i {
     padding-left: 13px;
   }
 }
