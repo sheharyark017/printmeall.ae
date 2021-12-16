@@ -33,6 +33,26 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+
+        }
+
+        .product-slide {
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -64,78 +84,82 @@
                         </div>
                     </div>
                     <div class="products-cards col-lg-10 col-12">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="product-card col-lg-4 col-6">
-                                    <div class="product-image">
-                                        <img src="images/paper-module-original-2-752x5642.jpg" alt="">
-                                    </div>
-                                    <div class="product-title">
-                                        <p>Original business cards</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>50 cards from CDN$ 21.99</p>
-                                    </div>
-                                    <div class="product-detail-points">
-                                        <ul>
-                                            <li>Our “feel good” premium paper</li>
-                                            <li>Great quality and great value</li>
-                                            <li>Available in gloss or matte finishes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-btn">
-                                        <a href="">Shop business card <i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
-                                <div class="product-card col-lg-4 col-6">
-                                    <div class="product-image">
-                                        <img src="images/paper-module-original-2-752x5642.jpg" alt="">
-                                    </div>
-                                    <div class="product-title">
-                                        <p>Original business cards</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>50 cards from CDN$ 21.99</p>
-                                    </div>
-                                    <div class="product-detail-points">
-                                        <ul>
-                                            <li>Our “feel good” premium paper</li>
-                                            <li>Great quality and great value</li>
-                                            <li>Available in gloss or matte finishes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-btn">
-                                        <a href="">Shop business card <i class="fas fa-chevron-right"></i></a>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper-product">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide product-slide">
+                                    <div class="product-card">
+                                        <div class="product-image">
+                                            <img src="images/paper-module-original-2-752x5642.jpg" alt="">
+                                        </div>
+                                        <div class="slider-product-text">
+                                            <div class="product-title">
+                                                <p>Original business cards</p>
+                                            </div>
+                                            <div class="product-price">
+                                                <p>50 cards from CDN$ 21.99</p>
+                                            </div>
+                                            <div class="product-detail-points">
+                                                <ul>
+                                                    <li>Our “feel good” premium paper</li>
+                                                    <li>Great quality and great value</li>
+                                                    <li>Available in gloss or matte finishes</li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-btn">
+                                                <a href="">Shop business card <i class="fas fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="product-card col-lg-4 col-6">
-                                    <div class="product-image">
-                                        <img src="images/paper-module-original-2-752x5642.jpg" alt="">
-                                    </div>
-                                    <div class="product-title">
-                                        <p>Original business cards</p>
-                                    </div>
-                                    <div class="product-price">
-                                        <p>50 cards from CDN$ 21.99</p>
-                                    </div>
-                                    <div class="product-detail-points">
-                                        <ul>
-                                            <li>Our “feel good” premium paper</li>
-                                            <li>Great quality and great value</li>
-                                            <li>Available in gloss or matte finishes</li>
-                                        </ul>
-                                    </div>
-                                    <div class="product-btn">
-                                        <a href="">Shop business card <i class="fas fa-chevron-right"></i></a>
-                                    </div>
-                                </div>
+
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container-fluid">
+        .
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper-product", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1400: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
