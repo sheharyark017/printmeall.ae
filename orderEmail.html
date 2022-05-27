@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .email {
+            width: 500px;
+            margin: auto;
+            font-family: sans-serif;
+        }
+
+        .header {
+            justify-content: center;
+            padding: 10px 0;
+            display: flex;
+            background-color: #f5e4e9;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 50px;
+            margin-right: 5px;
+        }
+
+        .logo p {
+            font-size: 17px;
+            font-weight: 600;
+            color: #3f3f3f;
+        }
+
+        .receipt-top {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .receipt-top p:nth-child(1) {
+            font-weight: 600;
+            font-size: 33px;
+            margin-bottom: 25px;
+        }
+
+        .order-summary {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            background-color: #f5e4e9;
+            padding: 20px 10px;
+        }
+
+        .order-summary p {
+            margin-bottom: 10px;
+        }
+
+        .summary {
+            width: 45%;
+        }
+
+        .summary-top p {
+            font-weight: 600;
+        }
+
+        .summary-detail {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shipping {
+            width: 40%;
+        }
+
+        .ordered-items {
+            margin-top: 40px;
+            padding: 10px;
+        }
+
+        .ordered-items-top {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(215, 215, 215);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        .ordered-items-top p {
+            font-weight: 600;
+        }
+
+        .ordered-items-top p:nth-child(1) {
+            width: 60%;
+        }
+
+        .ordered-items-top p:nth-child(2) {
+            width: 20%;
+        }
+
+        .ordered-items-top p:nth-child(3) {
+            width: 20%;
+        }
+
+        .ordered-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e2e2e2;
+            padding-bottom: 10px;
+        }
+
+        .ordered-item div:nth-child(1) {
+            width: 60%;
+        }
+
+        .ordered-item div:nth-child(2) {
+            width: 20%;
+        }
+
+        .ordered-item div:nth-child(3) {
+            width: 20%;
+        }
+
+        .ordered-total {
+            padding: 20px;
+            width: 55%;
+            margin-left: auto;
+        }
+
+        .ordered-total div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .ordered-total div p:nth-child(1) {
+            font-weight: 600;
+        }
+
+        footer {
+            background: #f5e4e9;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-logo {
+            width: 25%;
+        }
+
+        footer .logo {
+            margin-bottom: 20px;
+
+        }
+
+        .footer-logo .links a {
+            display: block;
+            color: #2f2e2e;
+            margin-bottom: 7px;
+            font-size: 15px;
+        }
+
+        .footer-logo .links a:hover {
+            text-decoration: underline;
+        }
+
+        footer .footer-information {
+            padding: 15px 0;
+            width: 60%;
+        }
+
+        footer .footer-information p:nth-child(1) {
+            font-weight: 600;
+            font-size: 17px;
+            color: #131313;
+            margin-bottom: 15px;
+        }
+
+        footer .footer-information p:nth-child(2) {
+            font-size: 15px;
+            color: #161616;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email">
+
+
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo2.png" alt="">
+                <p>Printmeall</p>
+            </div>
+        </div>
+        <div class="receipt">
+            <div class="receipt-top">
+                <p>Thanks for your order</p>
+                <p>You'll receive email when the items are shipped. If you have any questions, Call us 1-800-1234-5678
+                </p>
+            </div>
+
+            <div class="order-summary">
+                <div class="summary">
+                    <div class="summary-top">
+                        <p>SUMMARY</p>
+                    </div>
+                    <div class="summary-details">
+                        <div class="summary-detail">
+                            <p>Order #:</p>
+                            <p>123456789</p>
+                        </div>
+                        <div class="summary-detail">
+                            <p>Order Date:</p>
+                            <p>May 26, 2022</p>
+                        </div>
+                        <div class="summary-detail">
+                            <p>Order Total:</p>
+                            <p>$90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <div class="summary-top">
+                        <p>SHIPPING ADDRESS</p>
+                    </div>
+                    <div class="shipping-details">
+                        <p>Mian Usman</p>
+                        <p>78 Somewhere St Somewhere, Canada 99743</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ordered-items">
+                <div class="ordered-items-top">
+                    <p>Name</p>
+                    <p>Qty</p>
+                    <p>Price</p>
+                </div>
+                <div class="ordered-item">
+                    <div class="name">
+                        <p>Double Side Business Card</p>
+                    </div>
+                    <div class="qty">
+                        <p>2</p>
+                    </div>
+                    <div class="price">$50</div>
+                </div>
+                <div class="ordered-item">
+                    <div class="name">
+                        <p>One Side Business Card</p>
+                    </div>
+                    <div class="qty">
+                        <p>1</p>
+                    </div>
+                    <div class="price">$30</div>
+                </div>
+            </div>
+            <div class="ordered-total">
+                <div>
+                    <p>Subtotal (2 items):</p>
+                    <p>$80</p>
+                </div>
+                <div>
+                    <p>Shipping:</p>
+                    <p>$10</p>
+                </div>
+                <div>
+                    <p>Order Total:</p>
+                    <p>$90</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-logo">
+                <div class="logo">
+                    <img src="images/logo2.png" alt="">
+                    <p>Printmeall</p>
+                </div>
+
+                <div class="links">
+                    <a href="tel:12346789">12346789</a>
+                    <a href="https://printmeall.com/">Printmeall.com</a>
+                    <a href="mailto:info@printmeall.com">info@printmeall.com</a>
+                </div>
+            </div>
+            <div class="footer-information">
+                <p>Information</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis necessitatibus molestias aliquam
+                    tempora officiis eum illo reiciendis obcaecati, consequatur cum?</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
