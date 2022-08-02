@@ -9,7 +9,7 @@ body {
 }
 
 .form {
-  width: 60%;
+  width: 57%;
   box-shadow: 0 0 10px 0 #acacac;
   margin: auto;
   padding: 40px;
@@ -72,9 +72,40 @@ input:focus {
   border-radius: 3px;
 }
 
+.password .forgot-password {
+  text-align: right;
+  padding-right: 12px;
+  margin-top: 5px;
+}
+
+.password .forgot-password a {
+  text-decoration: none;
+  color: #4264eb;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .login-link {
   text-align: center;
   margin-top: 20px;
+}
+
+.auth-login {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.auth-login {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.auth-login img {
+  width: 45px;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 0 7px 0 rgb(177, 177, 177);
 }
 
 @media screen and (max-width: 980px) {
